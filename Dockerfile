@@ -20,7 +20,11 @@ RUN chown -R www-data:www-data /var/www
 RUN find /var/www -type d -exec chmod 775 {} \;
 RUN find /var/www -type f -exec chmod 664 {} \;
 
+RUN mkdir /app
+RUN chown -R www-data:www-data /app
+
 USER www-data
 WORKDIR /app
+
 
 CMD ["/bin/bash"]
