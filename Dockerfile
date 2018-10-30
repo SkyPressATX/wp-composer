@@ -15,6 +15,11 @@ RUN rm -f /tmp/composer-setup.php
 RUN curl -Lso /usr/local/bin/phpunit https://phar.phpunit.de/phpunit-7.phar
 RUN chmod +x /usr/local/bin/phpunit
 
+RUN mkdir /var/www/.composer
+RUN chown -R www-data:www-data /var/www
+RUN find /var/www -type d -exec chmod 775 {} \;
+RUN find /var/www -type f -exec chmod 664 {} \;
+
 RUN mkdir /app
 RUN chown -R www-data:www-data /app
 
