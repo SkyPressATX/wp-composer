@@ -2,7 +2,7 @@
 ## Download composer
 curl -Lso /usr/local/bin/composer https://getcomposer.org/download/1.8.4/composer.phar
 ## Download PHPUnit
-curl -Lso /usr/local/bin/phpunit https://phar.phpunit.de/phpunit-7.phar
+curl -Lso /usr/local/bin/phpunit https://phar.phpunit.de/phpunit-8.phar
 ## Set executables
 chmod +x /usr/local/bin/composer
 chmod +x /usr/local/bin/phpunit
