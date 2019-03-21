@@ -16,4 +16,4 @@ RUN chmod +x /tmp/setup.sh \
 USER www-data
 WORKDIR /app
 
-ENTRYPOINT ["composer"]
+ENTRYPOINT ["/bin/sh"]
