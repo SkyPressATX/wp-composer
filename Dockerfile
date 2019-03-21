@@ -26,5 +26,4 @@ RUN chown -R www-data:www-data /app
 USER www-data
 WORKDIR /app
 
-
-CMD ["/bin/bash"]
+ENTRYPOINT ["composer"]
